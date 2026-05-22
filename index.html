@@ -576,8 +576,8 @@
 
         const code  = weathercode[i];
         const [icon, desc] = WMO_ICONS[code] || ['🌡️', 'Unknown'];
-        const tMax  = celsiusToF(temperature_2m_max[i]);
-        const tMin  = celsiusToF(temperature_2m_min[i]);
+        const tMax  = Math.round(temperature_2m_max[i]);
+        const tMin  = Math.round(temperature_2m_min[i]);
         const rain  = precipitation_probability_max[i];
 
         const card = document.createElement('div');
@@ -590,8 +590,8 @@
           <div class="day-name">${DAYS[date.getDay()]}</div>
           <div class="day-date">${MONTHS[date.getMonth()]} ${date.getDate()}</div>
           <div class="weather-icon">${icon}</div>
-          <div class="temp-max">${tMax}°F</div>
-          <div class="temp-min">${tMin}°F</div>
+          <div class="temp-max">${tMax}°C</div>
+          <div class="temp-min">${tMin}°C</div>
           <div class="weather-desc">${desc}</div>
           ${rain > 20 ? `<div class="rain-chance">💧 ${rain}%</div>` : ''}
           ${isEvent ? '<div class="weather-desc" style="color:#e8732a;font-weight:600;margin-top:4px">★ Event day</div>' : ''}
@@ -604,7 +604,7 @@
 
       const note = document.createElement('p');
       note.style.cssText = 'font-size:0.72rem;color:#666;margin-top:10px;text-align:right';
-      note.textContent = 'Live data via Open-Meteo · San Francisco · temperatures in °F · event days highlighted in gold';
+      note.textContent = 'Live data via Open-Meteo · San Francisco · temperatures in °C · event days highlighted in gold';
       container.appendChild(note);
 
     } catch (err) {
