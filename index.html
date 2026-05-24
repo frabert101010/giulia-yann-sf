@@ -491,6 +491,52 @@
       </div>
     </div>
 
+    <!-- ── SAT JUNE 6 ── -->
+    <div class="day-group">
+      <div class="day-header">
+        <div class="day-emoji">🚢</div>
+        <div class="day-info">
+          <div class="day-label">Saturday, June 6</div>
+          <div class="day-sublabel">Waterfront Lunch in Tiburon &amp; Pizza Night in the Marina</div>
+        </div>
+      </div>
+      <div class="event-list">
+
+        <div class="event-item">
+          <div class="event-time">12:00<br/>PM</div>
+          <div class="event-body">
+            <div class="event-name">
+              Bungalow Kitchen
+              <span class="event-tag">🌊 Waterfront Lunch</span>
+            </div>
+            <div class="event-location">📍 5 Main Street, Tiburon, CA</div>
+            <p class="event-desc">
+              Chef Michael Mina's elevated coastal California restaurant perched on the Tiburon waterfront with sweeping views of the San Francisco Bay. The menu celebrates premium seafood, house-made pastas, and wood-fired dishes — best reached by a scenic ferry ride from the Ferry Building.
+            </p>
+            <a class="event-link" href="https://bungalowkitchen.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
+            <a class="event-link" href="https://bungalowkitchen.com/menus/" target="_blank" rel="noopener">🍽 Menu</a>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-time">8:00<br/>PM</div>
+          <div class="event-body">
+            <div class="event-name">
+              Napizza
+              <span class="event-tag">🍕 Neapolitan Pizza</span>
+            </div>
+            <div class="event-location">📍 3258 Scott Street, Marina District, San Francisco</div>
+            <p class="event-desc">
+              A beloved Marina neighborhood spot serving authentic Neapolitan-style wood-fired pizzas and Italian wine in a warm, lively setting. Napizza sources quality Italian ingredients and crafts each pizza with true Neapolitan technique — perfect for a relaxed and delicious evening close to the water.
+            </p>
+            <a class="event-link" href="https://www.napizzasf.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
+            <a class="event-link" href="https://www.napizzasf.com/_files/ugd/89619f_9edac633dc754da0ac70057393e27cd7.pdf" target="_blank" rel="noopener">🍽 Menu</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <!-- ── SUN JUNE 7 ── -->
     <div class="day-group">
       <div class="day-header">
@@ -578,7 +624,7 @@
         const card = document.createElement('div');
         card.className = 'weather-card';
 
-        const isEvent = ['2026-05-30','2026-06-05','2026-06-07'].includes(dateStr);
+        const isEvent = ['2026-05-30','2026-06-05','2026-06-06','2026-06-07'].includes(dateStr);
         if (isEvent) card.style.border = '2px solid #f5a623';
 
         card.innerHTML = `
