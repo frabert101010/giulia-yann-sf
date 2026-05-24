@@ -278,6 +278,26 @@
       color: #fff;
     }
 
+    /* ── Dish photos ── */
+    .dish-photos {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .dish-photos img {
+      flex: 1;
+      min-width: 0;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.25s;
+    }
+    .dish-photos img:hover { transform: scale(1.04); }
+    @media (max-width: 500px) {
+      .dish-photos img { height: 90px; }
+    }
+
     /* ── Footer ── */
     footer {
       text-align: center;
@@ -421,6 +441,10 @@
             <p class="event-desc">
               A cornerstone of wine-country dining since 2008, Bottega serves contemporary Italian cuisine led by Executive Chef Alex Espinoza — a "Top 100 Bay Area" restaurant set in the heart of Yountville's prestigious dining district. Think house-made pastas, wood-fired dishes, and an exceptional Napa wine list.
             </p>
+            <div class="dish-photos">
+              <img src="https://images.squarespace-cdn.com/content/v1/68a4e774f5f70a78efbc3880/c9345a32-dcd4-46a1-90f8-e35e7f77334f/Lunch.jpg" alt="Bottega lunch dishes" loading="lazy" />
+              <img src="https://images.squarespace-cdn.com/content/v1/68a4e774f5f70a78efbc3880/470cd130-3288-4457-81d0-9215b599c52b/Dinner2.jpg" alt="Bottega dinner dishes" loading="lazy" />
+            </div>
             <a class="event-link" href="https://www.botteganapavalley.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://www.botteganapavalley.com/menu" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
@@ -467,6 +491,10 @@
             <p class="event-desc">
               An Italian-inspired cicchetti bar and cocktail destination designed by Martin Brudnizki, Bar Sprezzatura captures the casual elegance of Italy. By evening it transforms into a buzzing aperitivo bar with creative cocktails by Carlo Splendorini and a menu of refined Italian small plates.
             </p>
+            <div class="dish-photos">
+              <img src="https://images.squarespace-cdn.com/content/v1/62c9ddb9f44af23264f5b290/727bb66f-bec1-4655-af4c-8a457333124a/BarSprezzatura_PChang_6373.0.jpg" alt="Bar Sprezzatura cicchetti plates" loading="lazy" />
+              <img src="https://img.ctykit.com/cdn/ca-downtown-sf/images/tr:w-1800/barsprezz-alldaysocial-feb24-38.jpg" alt="Bar Sprezzatura food and cocktails" loading="lazy" />
+            </div>
             <a class="event-link" href="https://www.barsprezzatura.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://www.barsprezzatura.com/menu" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
@@ -483,6 +511,10 @@
             <p class="event-desc">
               Chef Michael Tusk's three-Michelin-starred jewel in Jackson Square serves California contemporary cuisine with soulful Italian influences. Celebrated for its deep commitment to seasonality, terroir, and artisan producers, Quince offers a refined tasting menu that stands among the finest dining experiences on the West Coast.
             </p>
+            <div class="dish-photos">
+              <img src="https://cdn.prod.website-files.com/6578cb69a25fae151b717ac3/65bd808acff83c6dcc860b8a_quince.DSC06113rt-2.webp" alt="Quince signature plated dish" loading="lazy" />
+              <img src="https://cdn.prod.website-files.com/65902859d4ddcb4f4db6e725/670edc5da70dbf93841812b1_Trofie_02_wmall.webp" alt="Quince trofie pasta" loading="lazy" />
+            </div>
             <a class="event-link" href="https://www.quincerestaurant.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://www.quincerestaurant.com/cuisine" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
@@ -513,6 +545,10 @@
             <p class="event-desc">
               Chef Michael Mina's elevated coastal California restaurant perched on the Tiburon waterfront with sweeping views of the San Francisco Bay. The menu celebrates premium seafood, house-made pastas, and wood-fired dishes — best reached by a scenic ferry ride from the Ferry Building.
             </p>
+            <div class="dish-photos">
+              <img src="https://bungalowkitchen.com/wp-content/uploads/2024/08/Bigeye-Tuna-Au-Poivre-7.jpg" alt="Bigeye Tuna Au Poivre" loading="lazy" />
+              <img src="https://bungalowkitchen.com/wp-content/uploads/2024/08/BungalowKitchen-Sushi-42.jpg" alt="Bungalow Kitchen sushi" loading="lazy" />
+            </div>
             <a class="event-link" href="https://bungalowkitchen.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://bungalowkitchen.com/menus/" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
@@ -529,6 +565,10 @@
             <p class="event-desc">
               A beloved Marina neighborhood spot serving authentic Neapolitan-style wood-fired pizzas and Italian wine in a warm, lively setting. Napizza sources quality Italian ingredients and crafts each pizza with true Neapolitan technique — perfect for a relaxed and delicious evening close to the water.
             </p>
+            <div class="dish-photos">
+              <img src="https://static.wixstatic.com/media/89619f_56c4d4edc3eb421d82fb9f44f10310db~mv2.jpeg/v1/fit/w_480,h_479,q_90,enc_avif,quality_auto/89619f_56c4d4edc3eb421d82fb9f44f10310db~mv2.jpeg" alt="Napizza Neapolitan pizza" loading="lazy" />
+              <img src="https://static.wixstatic.com/media/89619f_7499687354294561a641c63011ef301d~mv2.jpg/v1/fit/w_480,h_479,q_90,enc_avif,quality_auto/89619f_7499687354294561a641c63011ef301d~mv2.jpg" alt="Napizza wood-fired pizza" loading="lazy" />
+            </div>
             <a class="event-link" href="https://www.napizzasf.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://www.napizzasf.com/_files/ugd/89619f_9edac633dc754da0ac70057393e27cd7.pdf" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
@@ -559,6 +599,10 @@
             <p class="event-desc">
               A Michelin-recognized Greek restaurant in the Financial District, Kokkari Estiatorio brings modern Hellenic cuisine rooted in Mediterranean traditions. The warm, fireplace-lit space is renowned for its wood-grill and rotisserie dishes — think whole fish, lamb chops, and mezze — wrapped in gracious Mediterranean hospitality.
             </p>
+            <div class="dish-photos">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/37/a9/1a/octapodaki-tou-yiorgou.jpg" alt="Kokkari grilled octopus" loading="lazy" />
+              <img src="https://media-cdn.tripadvisor.com/media/photo-f/06/76/83/53/kokkari-estiatorio.jpg" alt="Kokkari mixed dishes platter" loading="lazy" />
+            </div>
             <a class="event-link" href="https://kokkari.com/" target="_blank" rel="noopener">🌐 Visit Website</a>
             <a class="event-link" href="https://www.kokkari.com/menu" target="_blank" rel="noopener">🍽 Menu</a>
           </div>
